@@ -1,0 +1,16 @@
+@import '../constants.scss';
+
+
+button {
+  grid-area: btn;
+  font-size: 45px;
+  border: none;
+  border-radius: 10px;
+  line-height: 60px;
+  background: $btn_bg;
+  color: $btn_fc;
+  @media screen and (max-width: 850px) {
+    font-size: 30px;
+  }
+}
+

@@ -1,0 +1,43 @@
+@import '../constants.scss';
+
+.app {
+  display: grid;
+  grid-template-rows: 80px 170px 170px 170px 60px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 800px;
+  margin: 30px auto;
+  grid-template-areas:  'head head head'
+                        'params currentPsw currentPsw'
+                        'params currentPsw currentPsw'
+                        'params history history'
+                        'btn history history';
+
+  @media screen and (max-width: 850px) {
+    grid-template-rows: 60px 110px 110px 80px 100px 100px;
+    grid-gap: 5px;
+    grid-template-columns: 150px 1fr;
+    margin: 10px auto;
+    grid-template-areas:  'head head'
+                          'params params'
+                          'params params'
+                          'btn currentPsw'
+                          'history history'
+                          'history history';
+    width: 95%;
+  }
+}
+
+.header {
+  grid-area: head;
+  text-align: center;
+  font-size: 30px;
+  background: $header_bg;
+  color: $header_fc;
+  border-radius: 10px;
+  line-height: 80px;
+  border: 3px solid $header_fc;
+  @media screen and (max-width: 850px) {
+    line-height: 60px;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../constants.scss';
+
+.currentPswShow {
+  grid-area: currentPsw;
+  font-size: 50px;
+  background: $current_bg;
+  border-radius: 10px;
+  color: $current_fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 850px) {
+    font-size: 38px;
+  }
+  @media screen and (max-width: 585px) {
+    font-size: 23px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
+}

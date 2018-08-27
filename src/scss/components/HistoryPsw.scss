@@ -1,0 +1,16 @@
+@import '../constants.scss';
+
+.historyList {
+  grid-area: history;
+  font-size: 20px;
+  background: $history_bg;
+  border-radius: 10px;
+  color: $history_fc;
+  border: 3px solid $history_fc;
+}
+
+.headerHistory {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+}
