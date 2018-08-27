@@ -7,7 +7,7 @@
 
 STEPS:
 
-    $ git clone https://github.com/mad1982max/PasswordCreator-React-Redux-.git
+    $ git clone https://github.com/mad1982max/PasswordCreator-React-Redux.git
   
     $ npm i
   
